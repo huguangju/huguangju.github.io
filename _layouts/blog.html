@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">{% capture description %}{% if page.description %}{{ page.description }}{% else %}浮忆之窨{% endif %}{% endcapture %}
+    <meta name="description" content="{{ description }}">{% capture tags %}{% if page.tags %}{{ page.tags }}{% else %}浮忆之窨{% endif %}{% endcapture %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
+    <meta name="author" content="liyouhai.com"> {% capture canonical %}http://liyouhai.com{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+    <link rel="canonical" href="{{ canonical }}">
+    <link href="http://huguangju.github.io/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
+    <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}浮忆之窨</title>
+
+    <link href="/assets/css/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/assets/css/font-awesome/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+
+    <link href="/assets/themes/twitter/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/twitter/stylesheets/gfm.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <link href='/assets/css/site.css' rel='stylesheet' type='text/css'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--
+         ______       ___   _____    _____   _____   __   _
+        /  ___|     /   | |  _  \  /  ___/ /  _  \ |  \ | |
+        | |        / /| | | |_| |  | |___  | | | | |   \| |
+        | |       / / | | |  _  /  \___  \ | | | | | |\   |
+        | |___   / /  | | | | \ \   ___| | | |_| | | | \  |
+        \_____| /_/   |_| |_|  \_\ /_____/ \_____/ |_|  \_|
+     -->
+</head>
+
+<body>
+
+<!-- start -->
+<div class="container">
+    <div class="left-col">
+        <div class="intrude-less">
+            <header id="header" class="inner">
+                <div class="profilepic">
+                    <img src='https://avatars3.githubusercontent.com/u/6972433?v=3&s=460'
+                         alt='Profile Picture' style='width: 160px;'>
+                </div>
+                <h1><a href="/">浮忆之窨</a></h1>
+
+                <p class="subtitle"></p>
+                <nav id="main-nav">
+                    <ul class="main">
+                        <li><a href="/">博客</a></li>
+                        <li><a href="/archive.html">文章列表</a></li>
+                        <li><a href="/lab.html">实验室</a></li>
+                    </ul>
+
+                    <section class="aboutme">
+                        <p>
+                            Hi，我是Carson，我目前在成都，兼做Java及前端开发的工作，热衷于各种Web新技术。
+                        </p>
+                    </section>
+                </nav>
+                <nav id="sub-nav">
+                    <div class="social">
+                        <a class="twitter" href="" title="暂时没有">Twitter</a>
+                        <a class="github" href="https://github.com/huguangju" title="GitHub">GitHub</a>
+                        <a class="rss" href="/rss.xml" title="RSS">RSS</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+
+<div class="mid-col">
+    <div class="mid-col-container">
+        <div id="content" class="inner">
+
+            <div class="posts">
+                <div class="posts-item main-index">
+                    <article class="post">
+                        <div class="meta">
+                            <div class="date">
+                                <time datetime="2014-04-30" data-updated="true" itemprop="datePublished">2014-04-30</time>
+                            </div>
+                            <div class="tags">
+                                <a class="category" href="/tags.html#Javascript-ref">Javascript</a>&nbsp;
+                            </div>
+                        </div>
+
+                        {{ content }}
+
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="footer" class="inner">
+        Copyright &copy; 2013 huguangju
+        Powered by <a href="http://jekyllbootstrap.com">Jekyll</a>
+        Design from <a href="http://shashankmehta.in/archive/2012/greyshade.html">Greyshade</a>
+    </footer>
+
+    <script src="/assets/themes/twitter/javascripts/jquery.lazyload.min.js"></script>
+    <script src="/assets/themes/twitter/javascripts/common.js"></script>
+</div>
+</div>
+</div>
+<!-- end -->
+
+
+
+</body>
+
+</html>

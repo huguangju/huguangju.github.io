@@ -1,0 +1,30 @@
+#
+# Jekyll Settings
+#
+#production_url是sitemap.txt生成的url,方便百度谷歌收录
+production_url: http://huguangju.github.io
+name: 浮忆之窨
+url: http://huguangju.github.io
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+highlighter: pygments
+markdown: redcarpet
+permalink: /blog/:year/:month/:title
+paginate_path: "articles/page:num"
+paginate: 7
+exclude: [ "README.md",".idea",".iml",".name",".Node"]
+markdown_ext:  markdown,mkd,mkdn,md
+encoding: utf-8
+#在发布文章时使用一个未来的日期
+future: true
+#产生相关页面的索引
+lsi:      false
+#禁用定制插件
+safe:     false
+
+post_defaults:
+  layout: post
+
+redcarpet:
+  extensions: ["tables", "autolink"]
