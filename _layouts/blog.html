@@ -50,23 +50,12 @@
     <div class="sidebar-collapse">
         <ul class="nav" id="side-menu">
             <li class="nav-header">
-                <div class="dropdown profile-element">
+                <div class="dropdown profile-element" style="text-align:center">
                     <span>
                        <img alt="image" class="img-circle"
-                            src="http://q.qlogo.cn/qqapp/100229475/D880484DF76005AD8A95EDD8DC867464/100"/>
+                            src="http://q.qlogo.cn/qqapp/100229475/D880484DF76005AD8A95EDD8DC867464/100" style="width:80px;height:80px;"/>
                     </span>
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="clear">
-                            <span class="block m-t-xs"> <strong class="font-bold">Carson</strong></span>
-                            <span class="text-muted text-xs block">其它博客<b class="caret"></b></span>
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="#">CSDN</a></li>
-                        <li><a href="#">博客园</a></li>
-                        <li><a href="#">开源中国</a></li>
-                        <li><a href="#">CodeProject</a></li>
-                    </ul>
+
                 </div>
                 <div class="logo-element">HU</div>
             </li>
@@ -89,63 +78,77 @@
             <li>
                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">其它</span></a>
             </li>
+            <li>
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <span class="clear">
+                        <span class="text-muted text-xs block">其它博客<b class="caret"></b></span>
+                    </span>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                    <li><a href="#">CSDN</a></li>
+                    <li><a href="#">博客园</a></li>
+                    <li><a href="#">开源中国</a></li>
+                    <li><a href="#">CodeProject</a></li>
+                </ul>
+            </li>
 
         </ul>
 
     </div>
 </nav>
 <div id="page-wrapper" class="gray-bg dashbard-1">
-<div class="row border-bottom">
-<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-<div class="navbar-header">
-<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
 
-    <ul class="nav navbar-top-links navbar-right">
-        <li class="dropdown">
-            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                <i class="fa fa-bell"></i>
-                <span class="label label-primary">8</span>
-            </a>
-            <ul class="dropdown-menu dropdown-alerts">
-                <li>
-                    <a href="mailbox.html">
-                        <div>
-                            <i class="fa fa-edit"></i> js的function实现可变参数(多态）
-                            <span class="pull-right text-muted small">4 分钟前</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="profile.html">
-                        <div>
-                            <i class="fa fa-twitter fa-fw"></i> Socket.io在线聊天室
-                            <span class="pull-right text-muted small">1 天前</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="grid_options.html">
-                        <div>
-                            <i class="fa fa-upload fa-fw"></i> Python正则表达式指南
-                            <span class="pull-right text-muted small">2 天前</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <div class="text-center link-block">
-                        <a href="javascript:alert('暂未实现')">
-                            <strong>查看更多</strong>
-                            <i class="fa fa-angle-right"></i>
+
+<div class="">
+    <nav class="" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize btn" href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell"></i>
+                    <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-edit"></i> js的function实现可变参数(多态）
+                                <span class="pull-right text-muted small">4 分钟前</span>
+                            </div>
                         </a>
-                    </div>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> Socket.io在线聊天室
+                                <span class="pull-right text-muted small">1 天前</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Python正则表达式指南
+                                <span class="pull-right text-muted small">2 天前</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="javascript:alert('暂未实现')">
+                                <strong>查看更多</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
     </nav>
 </div>
 
@@ -187,7 +190,7 @@
             </li>
         </ul>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-5">
         <div class="flot-chart dashboard-chart">
             <div class="flot-chart-content" id="flot-dashboard-chart"></div>
         </div>
