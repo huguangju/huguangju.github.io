@@ -1513,7 +1513,11 @@ body {
 	width:100%
 }
 .container .mid-col .mid-col-container #content article {
-	border-top:none
+	border-top:none;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow: hidden;
+    color: #666;
 }
 .container .mid-col .mid-col-container #content article .title {
 	margin-left:0px

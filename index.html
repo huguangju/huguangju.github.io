@@ -6,23 +6,25 @@ tags : [原创,博客,技术博文,web开发,J2EE开发者]
 
 {% for post in paginator.posts %}
 
+<div class="meta">
+    <div class="date">
+        <time datetime='{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  {{ post.date | date: "%Y" }}' data-updated="true" itemprop="datePublished">{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  {{ post.date | date: "%Y" }}</time>
+    </div>
+    <div class="tags">
+        {% for tag in post.tags %}
+            <a class="category" href="/tags.html#{{ tag }}-ref">{{ tag }}</a>&nbsp;
+        {% endfor %}
 
-<section class="post">
+    </div>
+</div>
+
+<section class="markdown-body">
     <header class="post-header">
-        <img class="post-avatar" height="48" width="48"
-             src="{{ post.avatarimg }}">
-
-        <h2 class="post-title">{{ post.title }}</h2>
-
-        <p class="post-meta">By {{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  {{ post.date | date: "%Y" }}  <a
-                class="post-categorybut " href="/type/#{{ post.categories  }}">{{ post.categories  }}</a><a
-                class="post-category " > {{ post.tags | first }}</a><a
-                class="post-category " >  {{ post.tags[1] }}</a>
-        </p>
+        <h1 class="title">{{ post.title }}</h1>
     </header>
 
     <div class="post-description">
-        {{ post.content | split:'<!-- more -->'| first }}
+        {{ post.content | split:'<!-- more -->' | first }}
 
         <a href="{{ post.url }}" class="post-categorybut">阅读全文</a>
     </div>

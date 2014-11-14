@@ -9,7 +9,9 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 highlighter: pygments
-markdown: redcarpet
+
+#rdiscount解析器对于嵌入html javascript代码,为文章增加特定效果兼容较好
+markdown: rdiscount
 permalink: /blog/:year/:month/:title
 paginate_path: "articles/page:num"
 paginate: 7
@@ -26,5 +28,10 @@ safe:     false
 post_defaults:
   layout: post
 
-redcarpet:
-  extensions: ["tables", "autolink"]
+#redcarpet:
+#  extensions: ["tables", "autolink"]
+
+rdiscount:
+  extensions: [  "autolink" ]
+
+
