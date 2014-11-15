@@ -18,18 +18,24 @@ layout: blog
 <div class="article pure-u-22-24">
     {{ content }}
 </div>
-    <div class="pure-g pagination">
-        {% if page.previous %}
-        <a class="pure-u-1-2 pagination-item " href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }} "><p> <i class="fa fa-mail-reply"></i>&nbsp;{{ page.previous.title }}</p></a>
-        {% else %}
-        <span class="pure-u-1-2 pagination-item "><p>上一篇&nbsp;<i class="fa fa-chain-broken"></i></p></span>
-        {% endif %}
-        {% if page.next %}
-        <a class="pure-u-1-2 pagination-item " href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><p>{{ page.next.title }}&nbsp;<i class="fa fa-mail-forward"></i></p></a>
-        {% else %}
-        <span class="pure-u-1-2 pagination-item "><p>下一篇&nbsp;<i class="fa fa-chain-broken"></i></p></span>
-        {% endif %}
+    <div class="col-lg-12 m-b-lg animated fadeInRight">
+        <div class="col-md-6">
+            {% if page.previous %}
+                <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }} "><i class="fa fa-mail-reply"></i>{{ page.previous.title }}</a>
+            {% else %}
+                <button class="btn btn-block btn-outline btn-default disabled">上一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
+            {% endif %}
+        </div>
+        <div class="col-md-6">
+            {% if page.next %}
+                <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}&nbsp;<i class="fa fa-mail-forward"></i></a>
+            {% else %}
+                <button class="btn btn-block btn-outline btn-default disabled">下一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
+            {% endif %}
+        </div>
     </div>
+
+
     <link href="/assets/css/code.css" rel="stylesheet">
     <link href="/assets/css/min/fancybox.css" rel="stylesheet">
     <script src="/assets/js/min/jquery.toc.min.js" ></script>

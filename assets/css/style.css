@@ -2830,13 +2830,13 @@ ul.notes li div {
 .category-list li a .text-warning {
   color: #F8AC59;
 }
-.file-manager h5.tag-title {
+/*.file-manager*/ h5.tag-title {
   margin-top: 20px;
 }
-.file-manager .tag-list li {
+/*.file-manager*/ .tag-list li {
   float: left;
 }
-.file-manager .tag-list li a {
+/*.file-manager*/.tag-list li a {
   font-size: 10px;
   background-color: #f3f3f4;
   padding: 5px 12px;
@@ -2968,12 +2968,12 @@ a.compose-mail {
   background-color: #ffffff;
   border: 1px solid #e7eaec;
   border-bottom: 0;
-  padding: 30px 20px 20px 20px;
+  padding: 10px 20px 20px 20px;
 }
 .mail-box-header h2 {
   margin-top: 0px;
 }
-.mailbox-content .tag-list li a {
+/*.mailbox-content */.tag-list li a {
   background: #ffffff;
 }
 .mail-body {
