@@ -3083,7 +3083,7 @@ dd.project-people {
 */
 .theme-config {
   position: absolute;
-  top: 90px;
+  top: 10px;
   right: 0px;
   overflow: hidden;
 }
@@ -3603,4 +3603,8 @@ body.skin-3 {
   .welcome-message {
     display: none;
   }
+}
+
+ul.no-bg-color li a{
+    background-color: inherit;
 }

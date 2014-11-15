@@ -24,7 +24,10 @@
     <link href="/assets/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
 
     <link href="/assets/css/animate.css" rel="stylesheet">
+    <link href="/assets/css/circle-hover.css" rel="stylesheet">
+
     <link href="/assets/css/style.css" rel="stylesheet">
+
 
     <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 
@@ -49,14 +52,18 @@
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
         <ul class="nav" id="side-menu">
-            <li class="nav-header">
-                <div class="dropdown profile-element" style="text-align:center">
-                    <span>
-                       <img alt="image" class="img-circle"
-                            src="http://q.qlogo.cn/qqapp/100229475/D880484DF76005AD8A95EDD8DC867464/100" style="width:80px;height:80px;"/>
-                    </span>
-
-                </div>
+            <li class="nav-header" style="padding:inherit">
+                <ul id="circle-avatar" class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <h3>浮</h3>
+                                <p>by Carson <a href="https://github.com/huguangju">View on Github</a></p>
+                            </div>
+                            <div class="ch-thumb ch-img-3"></div>
+                        </div>
+                    </li>
+                </ul>
                 <div class="logo-element">HU</div>
             </li>
             <li class="active">
@@ -91,8 +98,20 @@
                     <li><a href="#">CodeProject</a></li>
                 </ul>
             </li>
-
         </ul>
+        <nav id="nav">
+            <ul class="tag-list no-bg-color">
+                <li>
+                    <a class="github" href="https://github.com/huguangju" title="github"><i class="fa fa-github fa-2x"></i></a>
+                </li>
+                <li>
+                    <a class="rss" href="http://huaban.com/m217466/" title="花瓣网"><i class="fa fa-yelp fa-2x"></i></a>
+                </li>
+                <li>
+                    <a class="weibo" href="#" titile="暂时没有" style="width:43px;"><i class="fa fa-weibo fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
 
     </div>
     </nav>

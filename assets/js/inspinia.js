@@ -116,15 +116,21 @@ function SmoothlyMenu() {
             function () {
                 $('#side-menu').fadeIn(500);
             }, 100);
+        $('#circle-avatar').fadeIn(500);
+        $('#nav ul').removeAttr('style');
     } else if ($('body').hasClass('fixed-sidebar')){
         $('#side-menu').hide();
         setTimeout(
             function () {
                 $('#side-menu').fadeIn(500);
             }, 300);
+        $('#circle-avatar').hide();
+        $('#nav ul').css('padding-left','15px');
     } else {
         // Remove all inline style from jquery fadeIn function to reset menu state
         $('#side-menu').removeAttr('style');
+        $('#circle-avatar').hide();
+        $('#nav ul').css('padding-left','15px');
     }
 }
 
