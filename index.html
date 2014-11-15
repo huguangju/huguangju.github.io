@@ -16,13 +16,9 @@ tags : [原创,博客,技术博文,web开发,J2EE开发者]
             </ul>
         </div>
         <h2>
-            <a class="" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="" href="{{ post.url }}">{{ post.title }}</a> &nbsp;&nbsp;
+            <small>{{ post.date | date: "%Y" }}年{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  </small>
         </h2>
-        <div class="mail-tools m-t-md">
-            <h5>
-                <span class="pull-right font-noraml">{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  {{ post.date | date: "%Y" }}年</span>
-            </h5>
-        </div>
     </div>
     <div class="mail-box">
 
