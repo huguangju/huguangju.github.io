@@ -4,8 +4,7 @@ layout: blog
 
 <div class="qrcodeTable"></div>
 <header class="post-header">
-    <img class="post-avatar" height="48" width="48"
-         src="{{ page.avatarimg }}">
+    <img class="post-avatar" height="48" width="48" src="{{ page.avatarimg }}">
 
     <h2 class="post-title">{{ page.title }}</h2>
 
@@ -15,41 +14,43 @@ layout: blog
             class="post-category " href="/tag/#{{ page.tags[1] }}">  {{ page.tags[1] }}</a>
     </p>
 </header>
+
 <div class="article pure-u-22-24">
     {{ content }}
 </div>
-    <div class="col-lg-12 m-b-lg animated fadeInRight">
-        <div class="col-md-6">
-            {% if page.previous %}
-                <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }} "><i class="fa fa-mail-reply"></i>{{ page.previous.title }}</a>
-            {% else %}
-                <button class="btn btn-block btn-outline btn-default disabled">上一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
-            {% endif %}
-        </div>
-        <div class="col-md-6">
-            {% if page.next %}
-                <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}&nbsp;<i class="fa fa-mail-forward"></i></a>
-            {% else %}
-                <button class="btn btn-block btn-outline btn-default disabled">下一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
-            {% endif %}
-        </div>
+
+<div class="col-lg-12 m-b-lg animated fadeInRight">
+    <div class="col-md-6">
+        {% if page.previous %}
+            <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }} "><i class="fa fa-mail-reply"></i>{{ page.previous.title }}</a>
+        {% else %}
+            <button class="btn btn-block btn-outline btn-default disabled">上一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
+        {% endif %}
     </div>
+    <div class="col-md-6">
+        {% if page.next %}
+            <a class="btn btn-block btn-outline btn-primary" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}&nbsp;<i class="fa fa-mail-forward"></i></a>
+        {% else %}
+            <button class="btn btn-block btn-outline btn-default disabled">下一篇&nbsp;<i class="fa fa-chain-broken"></i></button>
+        {% endif %}
+    </div>
+</div>
 
 
-    <link href="/assets/css/code.css" rel="stylesheet">
-    <link href="/assets/css/plugins/fancybox/fancybox.css" rel="stylesheet">
-    <script src="/assets/js/jquery-1.10.2.js" ></script>
-    <script src="/assets/js/plugins/jquery.toc.min.js" ></script>
-    <script src="/assets/js/plugins/jquery.qrcode.min.js" ></script>
-    <script src="/assets/js/plugins/jquery.fancybox.pack.js" ></script>
-    <script src="/assets/js/page.js" ></script>
+<link href="/assets/css/code.css" rel="stylesheet">
+<link href="/assets/css/plugins/fancybox/fancybox.css" rel="stylesheet">
+<script src="/assets/js/jquery-1.10.2.js" ></script>
+<script src="/assets/js/plugins/jquery.toc.min.js" ></script>
+<script src="/assets/js/plugins/jquery.qrcode.min.js" ></script>
+<script src="/assets/js/plugins/jquery.fancybox.pack.js" ></script>
+<script src="/assets/js/page.js" ></script>
 
-    {% if  page.sharing != false %}
-    {% include sharing.html %}
-    {% endif %}
-    {% if  page.duoshuo != false %}
-    {% include duoshuo.html %}
-    {% endif %}
+{% if  page.sharing != false %}
+{% include sharing.html %}
+{% endif %}
+{% if  page.duoshuo != false %}
+{% include duoshuo.html %}
+{% endif %}
 
 
 
