@@ -3517,7 +3517,7 @@ body.skin-3 {
   }
   .navbar-static-side {
     z-index: 101;
-    position: absolute;
+    position: fixed;
     width: 220px;
   }
   .navbar-top-links .dropdown-messages,
