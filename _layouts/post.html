@@ -4,8 +4,6 @@ layout: blog
 
 <div class="qrcodeTable"></div>
 <header class="post-header">
-    <img class="post-avatar" height="48" width="48" src="{{ page.avatarimg }}">
-
     <h2 class="post-title">{{ page.title }}</h2>
 
     <p class="post-meta">By {{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  {{ page.date | date: "%Y" }}  <a
@@ -37,13 +35,15 @@ layout: blog
 </div>
 
 
-<link href="/assets/css/code.css" rel="stylesheet">
-<link href="/assets/css/plugins/fancybox/fancybox.css" rel="stylesheet">
+
 <script src="/assets/js/jquery-1.10.2.js" ></script>
+<link href="/assets/css/plugins/fancybox/fancybox.css" rel="stylesheet">
 <script src="/assets/js/plugins/jquery.toc.min.js" ></script>
 <script src="/assets/js/plugins/jquery.qrcode.min.js" ></script>
 <script src="/assets/js/plugins/jquery.fancybox.pack.js" ></script>
+<script src="/assets/js/plugins/jquery.nicescroll.min.js"></script>
 <script src="/assets/js/page.js" ></script>
+
 
 {% if  page.sharing != false %}
 {% include sharing.html %}

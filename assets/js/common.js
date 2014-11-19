@@ -179,6 +179,7 @@ function WinMove() {
             }
         });
 }
+
 jQuery.fn.swap = function (b) {
     b = jQuery(b)[0];
     var a = this[0];
