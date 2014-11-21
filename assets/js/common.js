@@ -150,7 +150,7 @@ function WinMove() {
                 // Add div with above id to see position of panel
                 $('#posX').text('Final X: ' + finalxPos);
                 $('#posY').text('Final Y: ' + finalyPos);
-            },
+            }
         })
         .droppable({
             tolerance: 'pointer',

@@ -2149,6 +2149,7 @@ table.table-mail tr td {
 /* BACKGROUNDS */
 .gray-bg {
   background-color: #f3f3f4;
+  background-image: url('/assets/images/noise.png');
 }
 .white-bg {
   background-color: #ffffff;
@@ -2968,7 +2969,7 @@ a.compose-mail {
   background-color: #ffffff;
   border: 1px solid #e7eaec;
   border-bottom: 0;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 0px 20px;
 }
 .mail-box-header h2 {
   margin-top: 0px;
@@ -3007,6 +3008,30 @@ a.compose-mail {
 }
 .mail-ontact {
   width: 23%;
+}
+/* ARTICLE */
+.article-box{
+  background-color: #ffffff;
+  border: 1px solid #e7eaec;
+  border-top: 0;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.article-box-header{
+
+}
+.article-box-header h2{}
+.article-box-header .tag-list li a{}
+.article-body, .article-footer{}
+.article-footer{}
+.article-text{}
+span.breakline {
+  display: block;
+  width: 100%;
+  height: 12px;
+  left: 0;
+  bottom: 0;
+  background: url(/assets/images/breakline.png) repeat-x 4px top;
 }
 /* PROJECTS */
 .project-people,

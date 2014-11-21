@@ -1,20 +1,23 @@
 ---
 layout: blog
 ---
+<div class="article-box">
+    <header class="mail-box-header">
+        <h2 class="post-title">{{ page.title }}</h2>
 
-<div class="qrcodeTable"></div>
-<header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
+        <p class="post-meta">By {{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  {{ page.date | date: "%Y" }}  <a
+                class="post-categorybut " href="/type/#{{ post.categories  }}">{{ page.categories  }}</a><a
+                class="post-category " href="/tag/#{{ page.tags | first }}"> {{ page.tags | first }}</a><a
+                class="post-category " href="/tag/#{{ page.tags[1] }}">  {{ page.tags[1] }}</a>
+        </p>
+        <span style="display: block" class="breakline"></span>
+    </header>
 
-    <p class="post-meta">By {{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  {{ page.date | date: "%Y" }}  <a
-            class="post-categorybut " href="/type/#{{ post.categories  }}">{{ page.categories  }}</a><a
-            class="post-category " href="/tag/#{{ page.tags | first }}"> {{ page.tags | first }}</a><a
-            class="post-category " href="/tag/#{{ page.tags[1] }}">  {{ page.tags[1] }}</a>
-    </p>
-</header>
+    <div class="">
 
-<div class="article pure-u-22-24">
-    {{ content }}
+        {{ content }}
+
+    </div>
 </div>
 
 <div class="col-lg-12 m-b-lg animated fadeInRight">
