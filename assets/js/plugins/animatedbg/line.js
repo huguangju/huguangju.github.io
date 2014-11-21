@@ -21,6 +21,7 @@
         canvas.style.height = height+'px';
         canvas.style.position = 'absolute';
         canvas.style.top = '0px';
+        canvas.style.left = '0px';
 
         ctx = canvas.getContext('2d');
 
