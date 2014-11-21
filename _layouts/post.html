@@ -3,14 +3,18 @@ layout: blog
 ---
 <div class="article-box">
     <header class="mail-box-header">
-        <h2 class="post-title">{{ page.title }}</h2>
-
-        <p class="post-meta">By {{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  {{ page.date | date: "%Y" }}  <a
-                class="post-categorybut " href="/type/#{{ post.categories  }}">{{ page.categories  }}</a><a
-                class="post-category " href="/tag/#{{ page.tags | first }}"> {{ page.tags | first }}</a><a
-                class="post-category " href="/tag/#{{ page.tags[1] }}">  {{ page.tags[1] }}</a>
-        </p>
-        <span style="display: block" class="breakline"></span>
+        <h2>
+            <a href="{{ page.url }}">{{ page.title }}</a> &nbsp;&nbsp;
+            <small><i class="fa fa-calendar"></i> {{ page.date | date: "%Y" }}年{{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  </small>
+            <div class="pull-right">
+                <ul class="tag-list" style="padding: 0">
+                    {% for tag in page.tags %}
+                    <li><a href="/tags.html#{{ tag }}-ref"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </h2>
+        <span class="break-line"></span>
     </header>
 
     <div class="">

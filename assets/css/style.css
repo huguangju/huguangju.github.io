@@ -1690,10 +1690,10 @@ table.dataTable thead .sorting:after {
   padding-right: 20px !important;
 }
 body {
-  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,'simsun',Arial,sans-serif;
   background-color: #2f4050;
   font-size: 13px;
-  color: #676a6c;
+  color: #666;
   overflow-x: hidden;
 }
 body.boxed-layout {
@@ -2964,14 +2964,15 @@ a.compose-mail {
   border-top: 0;
   padding: 0px;
   margin-bottom: 20px;
+
 }
-.mail-box-header {
+.article-box-header, .mail-box-header {
   background-color: #ffffff;
   border: 1px solid #e7eaec;
   border-bottom: 0;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
-.mail-box-header h2 {
+.article-box-header h2,.mail-box-header h2 {
   margin-top: 0px;
 }
 /*.mailbox-content */.tag-list li a {
@@ -3011,21 +3012,24 @@ a.compose-mail {
 }
 /* ARTICLE */
 .article-box{
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   border: 1px solid #e7eaec;
   border-top: 0;
   padding: 0px;
   margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
 .article-box-header{
-
+  padding: 10px 20px 0px 20px;
 }
 .article-box-header h2{}
 .article-box-header .tag-list li a{}
 .article-body, .article-footer{}
 .article-footer{}
 .article-text{}
-span.breakline {
+span.break-line {
   display: block;
   width: 100%;
   height: 12px;
