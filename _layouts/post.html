@@ -6,11 +6,11 @@ layout: blog
     <header class="mail-box-header">
         <h2>
             <a href="{{ page.url }}">{{ page.title }}</a> &nbsp;&nbsp;
-            <small><i class="fa fa-calendar"></i> {{ page.date | date: "%Y" }}年{{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日  </small>
+            <small><i class="fa fa-calendar"></i> {{ page.date | date: "%Y年%m月%d日" }}  </small>
             <div class="pull-right">
                 <ul class="tag-list" style="padding: 0">
                     {% for tag in page.tags %}
-                    <li><a href="/tags.html#{{ tag }}-ref"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+                        <li><a href="/tags.html#{{ tag }}-ref"><i class="fa fa-tag"></i> {{ tag }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -18,7 +18,7 @@ layout: blog
         <span class="break-line"></span>
     </header>
 
-    <div class="">
+    <div class="article-body">
 
         {{ content }}
 

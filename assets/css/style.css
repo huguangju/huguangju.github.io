@@ -3026,7 +3026,9 @@ a.compose-mail {
 }
 .article-box-header h2{}
 .article-box-header .tag-list li a{}
-.article-body, .article-footer{}
+.article-body, .article-footer{
+  padding: 0px 10px;
+}
 .article-footer{}
 .article-text{}
 span.break-line {
