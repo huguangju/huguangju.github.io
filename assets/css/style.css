@@ -153,7 +153,7 @@ h5 {
 }
 .nav-header {
   padding: 33px 25px;
-  background: url("patterns/header-profile.png") no-repeat;
+  background: url("patterns/header-profile.png") repeat-x;
 }
 .pace-done .nav-header {
   transition: all 0.5s;
@@ -1787,7 +1787,7 @@ video {
   padding: 0 20px;
 }
 .wrapper-content {
-  padding: 20px 10px 40px;
+  padding: 10px 10px 40px;
 }
 #page-wrapper {
   padding: 0 15px;
@@ -3546,13 +3546,13 @@ body.skin-3 {
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
-    margin: 0 0 0 220px;
+    margin: 0 0 0 300px;
     min-height: 1100px;
   }
   .navbar-static-side {
     z-index: 101;
     position: fixed;
-    width: 220px;
+    width: 300px;
   }
   .navbar-top-links .dropdown-messages,
   .navbar-top-links .dropdown-tasks,

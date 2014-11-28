@@ -36,6 +36,15 @@ $(function () {
             'transitionOut'     : 'none'
         });
     };
+
+    // 生成目录
+    if($.fn.tocify){
+        $("#toc") && $("#toc").tocify({
+            selectors : "h2,h3,h4,h5,h6",
+            context :".article-body"
+         }).data("toc-tocify");
+    }
+
     /**
      * 2014年11月13日 15:20:24修改的小版本.稳定无bug.会更新到jekyllpure
      * - 二维码为自己独立生成png
