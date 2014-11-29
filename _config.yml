@@ -14,7 +14,8 @@ highlighter:    pygments
 
 #rdiscount解析器对于嵌入html javascript代码,为文章增加特定效果兼容较好
 markdown:       rdiscount
-permalink:      /blog/:year/:month/:title
+permalink:      /:categories/:year/:month/:day/:title.html
+
 paginate_path:  "page/page:num"
 paginate:       7
 exclude:        [ "README.md",".idea",".iml",".name",".Node"]
