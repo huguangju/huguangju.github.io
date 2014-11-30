@@ -27,6 +27,7 @@ duoshuo: false
 + [移动数组元素]({% post_url 2014-11-30-array-2 %}#shift-elements-in-array)
 + [数组排序]({% post_url 2014-11-30-array-2 %}#sort-array)
 + [数组求和]({% post_url 2014-11-30-array-2 %}#sum-values-in-array)
+
 ----------
 
 ## Collections
@@ -91,7 +92,4 @@ duoshuo: false
 
 ----------
 
-
-
-
-> 原文:[http://www.leveluplunch.com/java/examples](http://www.leveluplunch.com/java/examples), 新增部分示例
+原文:[http://www.leveluplunch.com/java/examples](http://www.leveluplunch.com/java/examples), 新增部分示例
