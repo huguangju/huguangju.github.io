@@ -7,9 +7,6 @@ tags : [java, spring data jpa, 翻译]
 duoshuo: true
 ---
 
-> 本文翻译自[Spring Data JPA - Reference Documentation](http://docs.spring.io/spring-data/jpa/docs/1.5.0.RC1/reference/html/index.html)<br/>
-> by [Carson](http://www.jediego.com)
-
 ##目录
 
 + 前言
@@ -71,3 +68,6 @@ duoshuo: true
       + 2.8.2. 类路径扫描@Entity类和JPA映射文件
       + 2.8.3. CDI 集成
 + 第二部分. 附录
+
+> 本文翻译自[Spring Data JPA - Reference Documentation](http://docs.spring.io/spring-data/jpa/docs/1.5.0.RC1/reference/html/index.html)<br/>
+> by [Carson](http://www.jediego.com)

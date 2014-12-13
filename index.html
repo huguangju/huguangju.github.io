@@ -14,7 +14,7 @@ indexPage: true
 			<div class="pull-right">
 				<ul class="tag-list" style="padding: 0">
 					{% for tag in post.tags %}
-						<li><a href="/tags.html#{{ tag }}-ref"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+						<li><a href="/blog/tag/#{{ tag }}" target="_blank"><i class="fa fa-tag"></i> {{ tag }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
