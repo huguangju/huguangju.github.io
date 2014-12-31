@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Spring Data JPA中文文档
+title: Spring Data JPA 1.7.1.RELEASE 中文文档(翻译中)
 description: "Spring Data JPA中文文档"
 category: [blog]
 tags : [java, spring data jpa, 翻译]
 duoshuo: true
 ---
 
+http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
 ##目录
 
 + 前言
