@@ -15,13 +15,11 @@ duoshuo: true
 Our goal is to generate for you a complete and modern Web app, unifying:<br/>
 我们的目标是为你生成一个完整和现代化的Web应用程序，总的来说：
 
-A high-performance and robust Java stack on the server side with Spring Boot<br/>
++ A high-performance and robust Java stack on the server side with Spring Boot<br/>
 用Spring Boot在服务器端创建高性能和健壮Java堆栈，应用于
-
-A sleek, modern, mobile-first front-end with AngularJS and Bootstrap<br/>
++ A sleek, modern, mobile-first front-end with AngularJS and Bootstrap<br/>
 用AngularJS 和Bootstrap构建时髦、现代化、移动优先的前端界面
-
-A powerful workflow to build your application with Yeoman, Bower, Grunt and Maven<br/>
++ A powerful workflow to build your application with Yeoman, Bower, Grunt and Maven<br/>
 基于Yeoman、Bower、Grunt、Maven 的强大工作流构建的应用
 
 # 示例和源码
