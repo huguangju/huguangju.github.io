@@ -3,9 +3,11 @@
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
     // Main
-    initHeader();
-    initAnimation();
-    addListeners();
+    if(!jQuery.browser.mobile){
+        initHeader();
+        initAnimation();
+        addListeners();
+    }
 
     function initHeader() {
         largeHeader = document.getElementById('nav-menu');
