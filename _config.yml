@@ -9,7 +9,7 @@ url:            http://www.jediego.com/
 
 source:         .
 destination:    ./_site
-plugins:        ./_plugins
+plugins_dir:        ./_plugins
 highlighter:    pygments
 
 #rdiscount解析器对于嵌入html javascript代码,为文章增加特定效果兼容较好
