@@ -55,15 +55,34 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jediego">
-<meta property="og:url" content="http://www.jediego.com/index.html">
+<meta name="description" content="快速安装及部署
+npm install hexo-cli -g
+hexo init blog
+
+hexo init会连带执行cd blog &amp;amp;&amp;amp; npm i。
+hexo init是clone自https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。
+hexo server启动服务。hexo s --de">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从jekyll切换到hexo">
+<meta property="og:url" content="http://www.jediego.com/2016/03/17/hello-world/index.html">
 <meta property="og:site_name" content="jediego">
-<meta property="og:description">
+<meta property="og:description" content="快速安装及部署
+npm install hexo-cli -g
+hexo init blog
+
+hexo init会连带执行cd blog &amp;amp;&amp;amp; npm i。
+hexo init是clone自https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。
+hexo server启动服务。hexo s --de">
+<meta property="og:updated_time" content="2016-03-17T14:58:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jediego">
-<meta name="twitter:description">
+<meta name="twitter:title" content="从jekyll切换到hexo">
+<meta name="twitter:description" content="快速安装及部署
+npm install hexo-cli -g
+hexo init blog
+
+hexo init会连带执行cd blog &amp;amp;&amp;amp; npm i。
+hexo init是clone自https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。
+hexo server启动服务。hexo s --de">
 
 
 
@@ -81,7 +100,7 @@
   };
 </script>
 
-  <title> jediego </title>
+  <title> 从jekyll切换到hexo | jediego </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -100,9 +119,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -203,15 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-
-    
-      
 
   
   
@@ -231,10 +242,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/03/17/hello-world/" itemprop="url">
-                  从jekyll切换到hexo
-                </a>
+                从jekyll切换到hexo
               
             
           </h1>
@@ -308,24 +316,100 @@
       
 
       
-        
-          <h3 id="快速安装及部署"><a href="#快速安装及部署" class="headerlink" title="快速安装及部署"></a>快速安装及部署</h3><ul>
+        <h3 id="快速安装及部署"><a href="#快速安装及部署" class="headerlink" title="快速安装及部署"></a>快速安装及部署</h3><ul>
 <li><code>npm install hexo-cli -g</code></li>
 <li><code>hexo init blog</code></li>
 </ul>
 <p><code>hexo init</code>会连带执行<code>cd blog &amp;&amp; npm i</code>。</p>
-<p><code>hexo init</code>是clone自<a href="https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。">https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。</a></p>
+<p><code>hexo init</code>是clone自<a href="https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。" target="_blank" rel="external">https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。</a></p>
 <p><code>hexo server</code>启动服务。<code>hexo s --debug</code>以调试模式启动, 并保存到debug.log文件中。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/17/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+<a id="more"></a>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul>
+<li>换主题(NexT.Pisces)<ul>
+<li><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></li>
+<li>修改_config.yml中的下列配置, 并重启服务<ul>
+<li>theme: next</li>
+<li>language: zh-Hans (默认为en)</li>
+</ul>
+</li>
+<li>修改themes/next/_config.yml中的配置<ul>
+<li>scheme: Pisces (默认为Muse)</li>
+<li>avatar: 指定博客头像</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>其它常用配置</p>
+<ul>
+<li>_config.yml<ul>
+<li>title</li>
+<li>author</li>
+<li>description (站点描述)</li>
+<li>disqus_shortname (使用disqus作为评论系统)</li>
+<li>baidu_analytics (谷歌的被墙了，不支持CNZZ，只能用百度/腾讯的)</li>
+<li>swiftype_key (Swiftype 搜索)</li>
+</ul>
+</li>
+<li><p>themes/next/_config.yml</p>
+</li>
+<li><p>文章摘要：写文章时，用<code>&lt;!-- more --&gt;</code>分隔，则只把它之前的内容显示在首页</p>
+</li>
+</ul>
+</li>
+<li><p>添加标签云/分类/关于页</p>
+<ul>
+<li><a href="http://theme-next.iissnan.com/theme-settings.html#标签云页面面" target="_blank" rel="external">添加标签云</a><br><code>hexo new page tags</code> (注：要加上 <code>type: tags</code> 字段)</li>
+<li><code>hexo new page categories</code>  (注：要加上 <code>type: categories</code> 字段)</li>
+<li><code>hexo new page about</code> (注：要加上 <code>type: about</code> 字段)</li>
+</ul>
+</li>
+<li><p>RSS订阅 <code>npm install hexo-generator-feed --save</code></p>
+</li>
+<li>Sitemap站长地图 <code>npm install hexo-generator-sitemap --save</code></li>
+</ul>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><ul>
+<li><p>写博客相关命令<br>  Hexo常用命令：</p>
+<ul>
+<li><code>hexo new &quot;postName&quot;</code>       #新建文章</li>
+<li><code>hexo new page &quot;pageName&quot;</code>  #新建页面</li>
+<li><code>hexo generate</code>             #生成静态页面至public目录</li>
+<li><code>hexo server</code>               #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
+<li><code>hexo deploy</code>               #将.deploy目录部署到GitHub</li>
+</ul>
+</li>
+<li><p>当然，如果每次输入那么长命令，那么一定想到用简写：</p>
+<ul>
+<li>hexo n == hexo new</li>
+<li>hexo g == hexo generate</li>
+<li>hexo s == hexo server</li>
+<li>hexo d == hexo deploy</li>
+</ul>
+</li>
+<li><p>其它的，还可以复合命令：</p>
+<p>  <code>hexo deploy -g</code><br>  <code>hexo server -g</code></p>
+</li>
+</ul>
+<p>有时候生成的网页出错了，而生成的rss其实没有清除，那么用下面的命令，再重新生成吧</p>
+<pre><code>hexo clean
+</code></pre><h2 id="Hexo资源"><a href="#Hexo资源" class="headerlink" title="Hexo资源"></a>Hexo资源</h2><ul>
+<li><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">Github</a></li>
+<li><a href="https://hexo.io/themes/" target="_blank" rel="external">主题列表</a></li>
+<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT Theme - 推荐主题</a></li>
+<li><a href="http://www.maintao.com/2014/hexo-beginner&#39;s-guide/" target="_blank" rel="external">为什么选hero而不是ghost和jekyll</a></li>
+<li><a href="http://www.jianshu.com/p/35e197cb1273" target="_blank" rel="external">Hexo搭建Github-Pages博客填坑教程</a></li>
+</ul>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ul>
+<li>timezone: ‘Asia/Shanghai’<br>时区之前写成’+8:00’, 结果造成添加云标签出错 (<a href="https://github.com/hexojs/hexo/issues/1374" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/1374</a>)</li>
+<li>TODO: 部署到github并添加readme.md, hero在deploy时会删除它</li>
+<li>TODO: 同时管理两个github账号</li>
+</ul>
+
       
     </div>
 
     <div>
+      
+        
       
     </div>
 
@@ -336,17 +420,15 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
 
-  </section>
-
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -354,6 +436,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -373,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars2.githubusercontent.com/u/6972433"
@@ -425,6 +527,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速安装及部署"><span class="nav-number">1.</span> <span class="nav-text">快速安装及部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令"><span class="nav-number">3.</span> <span class="nav-text">命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo资源"><span class="nav-number"></span> <span class="nav-text">Hexo资源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常见问题"><span class="nav-number">1.</span> <span class="nav-text">常见问题</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -514,6 +633,167 @@
 
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
@@ -530,9 +810,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'jediego';
-      var disqus_identifier = 'index.html';
-      var disqus_title = '';
-      var disqus_url = '';
+      var disqus_identifier = '2016/03/17/hello-world/';
+      var disqus_title = '从jekyll切换到hexo';
+      var disqus_url = 'http://www.jediego.com/2016/03/17/hello-world/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -543,6 +823,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
