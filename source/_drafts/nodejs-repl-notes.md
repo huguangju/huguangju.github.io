@@ -1,8 +1,10 @@
 ---
 title: nodejs REPL 笔记
 tags:
-- nodejs
+  - nodejs
+date: 2016-03-25 11:57:30
 ---
+
 
 **Read-Eval-Print-Loop (REPL)**: 交互式运行环境
 
