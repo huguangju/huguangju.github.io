@@ -39,7 +39,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -55,15 +55,19 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jediego">
-<meta property="og:url" content="http://www.jediego.com/index.html">
+<meta name="description" content="在不同java项目之间来回切换，可能会遇到java版本不一致而导致报错，目前存在Jdk1.6、7、8新旧版交替的情况，这就需要有快捷的方式来切换JDK。
+1Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/apache/maven/wrapper/MavenWrapperMain : Unsupported">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在OS X系统上为Java安装和维护多个版本JDK">
+<meta property="og:url" content="http://www.jediego.com/2016/03/25/install-or-manage-multiple-versions-of-java-on-os-x/index.html">
 <meta property="og:site_name" content="jediego">
-<meta property="og:description">
+<meta property="og:description" content="在不同java项目之间来回切换，可能会遇到java版本不一致而导致报错，目前存在Jdk1.6、7、8新旧版交替的情况，这就需要有快捷的方式来切换JDK。
+1Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/apache/maven/wrapper/MavenWrapperMain : Unsupported">
+<meta property="og:updated_time" content="2016-03-25T03:55:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jediego">
-<meta name="twitter:description">
+<meta name="twitter:title" content="在OS X系统上为Java安装和维护多个版本JDK">
+<meta name="twitter:description" content="在不同java项目之间来回切换，可能会遇到java版本不一致而导致报错，目前存在Jdk1.6、7、8新旧版交替的情况，这就需要有快捷的方式来切换JDK。
+1Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/apache/maven/wrapper/MavenWrapperMain : Unsupported">
 
 
 
@@ -81,7 +85,7 @@
   };
 </script>
 
-  <title> jediego </title>
+  <title> 在OS X系统上为Java安装和维护多个版本JDK | jediego </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -100,9 +104,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -203,15 +205,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-
-    
-      
 
   
   
@@ -231,10 +227,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/03/25/install-or-manage-multiple-versions-of-java-on-os-x/" itemprop="url">
-                  在OS X系统上为Java安装和维护多个版本JDK
-                </a>
+                在OS X系统上为Java安装和维护多个版本JDK
               
             
           </h1>
@@ -289,9 +282,7 @@
       
 
       
-        
-          
-            <p>在不同java项目之间来回切换，可能会遇到java版本不一致而导致报错，目前存在Jdk1.6、7、8新旧版交替的情况，这就需要有快捷的方式来切换JDK。</p>
+        <p>在不同java项目之间来回切换，可能会遇到java版本不一致而导致报错，目前存在Jdk1.6、7、8新旧版交替的情况，这就需要有快捷的方式来切换JDK。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> java.lang.UnsupportedClassVersionError: org/apache/maven/wrapper/MavenWrapperMain : Unsupported major.minor version <span class="number">51.0</span></span><br></pre></td></tr></table></figure>
 <p>各java版本与之对应的主版本号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">J2SE 8 = 52,</span><br><span class="line">J2SE 7 = 51,</span><br><span class="line">J2SE 6.0 = 50,</span><br><span class="line">J2SE 5.0 = 49,</span><br><span class="line">JDK 1.4 = 48,</span><br><span class="line">JDK 1.3 = 47,</span><br><span class="line">JDK 1.2 = 46,</span><br><span class="line">JDK 1.1 = 45</span><br></pre></td></tr></table></figure></p>
 <p>JDK安装步骤略过。<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">传送</a></p>
@@ -345,165 +336,51 @@
 <p><a href="http://chessman-126-com.iteye.com/blog/2162466" target="_blank" rel="external">http://chessman-126-com.iteye.com/blog/2162466</a><br><a href="http://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions" target="_blank" rel="external">http://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions</a><br><a href="http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/" target="_blank" rel="external">http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/</a><br><a href="http://javahabit.com/2015/03/30/install-or-manage-multiple-versions-of-java-on-os-x/" target="_blank" rel="external">http://javahabit.com/2015/03/30/install-or-manage-multiple-versions-of-java-on-os-x/</a></p>
 </blockquote>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/17/hello-world/" itemprop="url">
-                  从jekyll切换到hexo
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-17T22:58:50+08:00" content="2016-03-17">
-              2016-03-17
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/java/" rel="tag">#java</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/17/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/17/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/03/17/hello-world/" class="leancloud_visitors" data-flag-title="从jekyll切换到hexo">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h3 id="快速安装及部署"><a href="#快速安装及部署" class="headerlink" title="快速安装及部署"></a>快速安装及部署</h3><ul>
-<li><code>npm install hexo-cli -g</code></li>
-<li><code>hexo init blog</code></li>
-</ul>
-<p><code>hexo init</code>会连带执行<code>cd blog &amp;&amp; npm i</code>。</p>
-<p><code>hexo init</code>是clone自<a href="https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。">https://github.com/hexojs/hexo-theme-landscape.git，并默认使用landscape主题。</a></p>
-<p><code>hexo server</code>启动服务。<code>hexo s --debug</code>以调试模式启动, 并保存到debug.log文件中。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/17/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/17/hello-world/" rel="next" title="从jekyll切换到hexo">
+                <i class="fa fa-chevron-left"></i> 从jekyll切换到hexo
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
 
-  </section>
-
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -511,6 +388,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -530,8 +418,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars2.githubusercontent.com/u/6972433"
@@ -582,6 +479,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方式一：bash"><span class="nav-number">1.</span> <span class="nav-text">方式一：bash</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方式二：jenv"><span class="nav-number">2.</span> <span class="nav-text">方式二：jenv</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#手动安装"><span class="nav-number">2.1.</span> <span class="nav-text">手动安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用-brew-cask-安装-推荐"><span class="nav-number">2.2.</span> <span class="nav-text">用 brew cask 安装 (推荐)</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -671,6 +585,167 @@
 
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
@@ -687,9 +762,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'jediego';
-      var disqus_identifier = 'index.html';
-      var disqus_title = '';
-      var disqus_url = '';
+      var disqus_identifier = '2016/03/25/install-or-manage-multiple-versions-of-java-on-os-x/';
+      var disqus_title = '在OS X系统上为Java安装和维护多个版本JDK';
+      var disqus_url = 'http://www.jediego.com/2016/03/25/install-or-manage-multiple-versions-of-java-on-os-x/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -700,6 +775,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
