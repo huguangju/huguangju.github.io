@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "carson-blog",
   "version": "0.0.0",
-  "description": "huguangju's blog",
+  "description": "Carson's blog",
   "license": "MIT",
   "type": "module",
   "scripts": {
