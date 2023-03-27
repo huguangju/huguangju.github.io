@@ -17,4 +17,14 @@ export default sidebar({
       children: "structure",
     },
   ],
+  "/reading/": "structure"
+  // "/reading/": [
+  //   "",
+  //   {
+  //     text: "React 设计原理",
+  //     prefix: "react-design-principles/",
+  //     link: "react-design-principles/",
+  //     children: "structure",
+  //   },
+  // ]
 });
