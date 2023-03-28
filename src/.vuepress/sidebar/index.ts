@@ -1,7 +1,9 @@
 import { sidebar } from "vuepress-theme-hope";
+import { reading } from "./reading/index";
 
 export default sidebar({
   "/engineering/": "structure",
+
   "/vue/": [
     "",
     {
@@ -17,14 +19,8 @@ export default sidebar({
       children: "structure",
     },
   ],
-  "/reading/": "structure"
-  // "/reading/": [
-  //   "",
-  //   {
-  //     text: "React 设计原理",
-  //     prefix: "react-design-principles/",
-  //     link: "react-design-principles/",
-  //     children: "structure",
-  //   },
-  // ]
+
+  "/reading/": reading,
+  "/reading/react-design-principles/": "structure",
+  "/reading/vue-design-and-achieve/": "structure",
 });
