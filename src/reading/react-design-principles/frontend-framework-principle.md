@@ -1,10 +1,9 @@
 ---
 title: 前端框架原理概览
 category:
-  - react
-  - 读书笔记
+  - React
 tag:
-  - react
+  - 读书笔记
 ---
 
 ## 始识前端框架

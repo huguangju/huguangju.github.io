@@ -11,6 +11,7 @@ export default sidebar({
   ]),
   "/reading/react-design-principles/": "structure",
   "/reading/vue-design-and-achieve/": "structure",
+  "/reading/programming-typescript/": "structure",
 
   "/resource/": arraySidebar([
     "",

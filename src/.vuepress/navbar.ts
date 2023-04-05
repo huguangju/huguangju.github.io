@@ -19,6 +19,7 @@ export default navbar([
       },
       "react-design-principles/",
       "vue-design-and-achieve/",
+      "programming-typescript/",
     ],
   },
   // {

@@ -1,10 +1,9 @@
 ---
 title: 权衡的艺术
 category:
-  - vue
-  - 读书笔记
+  - Vue
 tag:
-  - vue
+  - 读书笔记
 article: false
 ---
 

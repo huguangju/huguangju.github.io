@@ -1,10 +1,9 @@
 ---
 title: React 理念
 category:
-  - react
-  - 读书笔记
+  - React
 tag:
-  - react
+  - 读书笔记
 article: false
 ---
 
