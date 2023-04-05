@@ -5,7 +5,7 @@ icon: home
 title: 主页
 heroImage: /logo.svg
 heroText: Carson's blog
-tagline: 不积跬步，无以至千里；不积小流，无以成江海
+tagline: 积跬步以至千里
 # projects:
 #   - icon: project
 #     name: 项目名称

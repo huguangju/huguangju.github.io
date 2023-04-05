@@ -21,9 +21,19 @@ export default navbar([
       "vue-design-and-achieve/",
     ],
   },
+  // {
+  //   text: "资源",
+  //   icon: "expansion",
+  //   link: "/nav/",
+  // },
   {
     text: "资源",
     icon: "expansion",
-    link: "/nav/",
-  },
+    prefix: "/resource/",
+    children: [
+      "",
+      // "nav/",
+      "interview/",
+    ]
+  }
 ]);

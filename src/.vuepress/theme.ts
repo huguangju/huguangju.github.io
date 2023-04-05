@@ -9,7 +9,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "huguangju/blog",
+  repo: "huguangju/huguangju.github.io",
 
   docsDir: "src",
 
@@ -18,7 +18,7 @@ export default hopeTheme({
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/huguangju",
-      Gitee: "https://example.com",
+      // Gitee: "https://example.com",
     },
   },
 

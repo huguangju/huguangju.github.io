@@ -1,26 +1,21 @@
 import { sidebar } from "vuepress-theme-hope";
-import { reading } from "./reading/index";
+import { arraySidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   "/engineering/": "structure",
 
-  "/vue/": [
+  "/reading/": arraySidebar([
     "",
-    {
-      text: "响应式",
-      prefix: "reactivity/",
-      link: "reactivity/",
-      children: "structure",
-    },
-    {
-      text: "文章",
-      icon: "note",
-      prefix: "posts/",
-      children: "structure",
-    },
-  ],
-
-  "/reading/": reading,
+    "react-design-principles/",
+    "vue-design-and-achieve/",
+  ]),
   "/reading/react-design-principles/": "structure",
   "/reading/vue-design-and-achieve/": "structure",
+
+  "/resource/": arraySidebar([
+    "",
+    "interview/",
+    // "nav/",
+  ]),
+  "/resource/interview/": "structure",
 });

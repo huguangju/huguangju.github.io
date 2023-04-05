@@ -1,4 +1,5 @@
 ---
+title: 导航
 article: false
 ---
 
@@ -6,15 +7,19 @@ article: false
 
 - [MDN - JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 - [ES6入门教程 by 阮一峰](https://es6.ruanyifeng.com/)
+- [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
 
 ## 前端站点
 
 - [CSS-Tricks](https://css-tricks.com/)
 - [Codrops](https://tympanus.net/codrops/) 关于 Web 设计和开发的博客和社区站点
 - [SitePoint](https://www.sitepoint.com/) 提供有深度的前端文章和教程
+- [前端编程导航](https://nav.daijl.cn/)
 
 ## 博客
 
+- [ascoders/weekly](https://github.com/ascoders/weekly) 前端精读周刊。帮你理解最前沿、实用的技术
+- [tnfe/TNT-Weekly](https://github.com/tnfe/TNT-Weekly) 每周为你提供高质量的关于小程序、h5等前端领域的文章和项目
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [张鑫旭的个人主页](https://www.zhangxinxu.com/wordpress/)
 - [朴灵的博客](https://www.barretlee.com/entry/)
@@ -48,6 +53,7 @@ article: false
 
 ## 参考
 
+- [Roadmap](https://roadmap.sh/) 交互式路线图、指南和其他教育内容
 - [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
 - [收藏夹 by 花裤衩](https://panjiachen.github.io/awesome-bookmarks/repository/)
 - [收藏夹 by Evan](https://xugaoyi.com/pages/beb6c0bd8a66cea6)
