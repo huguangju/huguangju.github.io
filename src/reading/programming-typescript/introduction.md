@@ -61,7 +61,7 @@ TypeScript 编译器生成 AST 之后，真正运行代码前，会对代码做*
 | 何时检查类型？ | 运行时 | 编译时 |
 | 何时报告错误 | 运行时 | 编译时（多数时候）|
 
-JavaScript 是动态绑定的，在程序运行时才知道类型。
+JavaScript 是**动态绑定**的，在程序运行时才知道类型。
 
 TypeScript 是**渐进式类型语言**，在编译时可以知道类型（即使没有类型，也能部分推导）。
 
@@ -118,29 +118,39 @@ npm install --save-dev typescript tslint @types/node
 
 使用 tsconfig.json 可把配置纳入源码控制。可通过 `tsc --help` 命令查看更多选项。
 
-### tslint.json
+### eslint.json
 
-生成默认配置的 tslint.json 文件：
+> 原文使用的是 TSLint，其官方维护已于 2019 年停止，会与 ESLint 合并，因此推荐使用 ESLint 代替 TSLint。
+
+生成默认配置的 .eslintrc.js 文件：
 
 ```shell
-npx ts-lint --init
+# 根据提示操作
+npx eslint --init
 ```
 
 内容如下：
 
-```json
-{
-  "defaultSeverity": "error",
-  "extends": [
-    "tslint:recommended"
-  ],
-  "jsRules": {},
-  "rules": {},
-  "rulesDirectory": []
+```js
+module.exports = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es2021: true,
+  },
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+  overrides: [],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
+  plugins: ['@typescript-eslint'],
+  rules: {},
 }
+
 ```
 
-完整的规则列表参见 [TSLint 文档](https://palantir.github.io/tslint/rules/)。
+完整的规则列表参见 [ESLint 文档](https://eslint.org/)。
 
 ### index.ts
 
