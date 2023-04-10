@@ -6,7 +6,7 @@ article: false
 
 - [《React 设计原理》](./react-design-principles/) - by 卡颂
 - [《Vue.js 设计与实现》](./vue-design-and-achieve/) - by 霍春阳
-- 《TypeScript 编程》 - by Boris Cherny
+- [《TypeScript 编程》](./programming-typescript/) - by Boris Cherny
 - 《Effective TypeScript》 - by 丹.范德卡姆
 - 《JavaScript 经典实例》 - by 亚当.D.斯科特
 - 《React Router 从原理到实战》 - by 李杨韬

@@ -8,6 +8,7 @@ export default sidebar({
     "",
     "react-design-principles/",
     "vue-design-and-achieve/",
+    "programming-typescript/",
   ]),
   "/reading/react-design-principles/": "structure",
   "/reading/vue-design-and-achieve/": "structure",
