@@ -1,5 +1,5 @@
 ---
-icon: read
+icon: ant-design:read-outlined
 title: 读书笔记
 article: false
 ---

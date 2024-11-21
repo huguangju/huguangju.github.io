@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: ant-design:home-outlined
 title: 主页
 heroImage: /logo.svg
 heroText: Carson's blog

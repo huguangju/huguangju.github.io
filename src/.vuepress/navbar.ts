@@ -7,13 +7,13 @@ export default navbar([
   // { text: "文档", icon: "read", link: "/doc/" },
   {
     text: "读记",
-    icon: "read",
+    icon: "ant-design:read-outlined",
     // link: "/reading/",
     prefix: "/reading/",
     children: [
       {
         text: "读记",
-        icon: "read",
+        icon: "ant-design:read-outlined",
         link: "",
         activeMatch: "^/reading/$",
       },
@@ -22,14 +22,9 @@ export default navbar([
       "programming-typescript/",
     ],
   },
-  // {
-  //   text: "资源",
-  //   icon: "expansion",
-  //   link: "/nav/",
-  // },
   {
     text: "资源",
-    icon: "expansion",
+    icon: "ant-design:deployment-unit-outlined",
     prefix: "/resource/",
     children: [
       "",

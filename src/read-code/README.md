@@ -1,5 +1,5 @@
 ---
-icon: code
+icon: ant-design:code-outlined
 title: 读源码
 article: false
 ---
